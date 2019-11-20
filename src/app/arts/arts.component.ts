@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class ArtsComponent implements OnInit {
 
   arts: Object;
-
+  imgs: Object;
   constructor(private api: ApiService) { }
 
   ngOnInit() {
@@ -22,6 +22,16 @@ export class ArtsComponent implements OnInit {
       response.json().then((api) => {
         this.arts = api.results;
         console.log(this.arts);
+      });
+    }).catch((err) => {
+      console.log(`Error generated ${err}`);
+    });
+
+    this.api.getArts().then((response) => {
+      response.json().then((api) => {
+        this.imgs = api.results;
+        console.log('images here');
+        console.log(this.imgs); 
       });
     }).catch((err) => {
       console.log(`Error generated ${err}`);
