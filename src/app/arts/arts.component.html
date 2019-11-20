@@ -1,12 +1,9 @@
 <h2>Hello I am Body</h2>
 <div *ngFor="let art of arts">
-  <div *ngFor="let multimedia of art.multimedia">
-    <p>{{multimedia.url}}</p>
-     <!-- <img ng-src="{{ multimedia.url }}" alt="Description" /> -->
-     <img width="200" alt="thumbnail" [src]="multimedia.url">
-  </div>
   <h3>{{ art.subsection }}</h3>
   <p>{{ art.title }}</p>
-  <!-- <p>{{ art.multimedia[0].url }}</p> -->
-  <!-- <img ng-src="{{ art.multimedia[0].url }}" alt="Description" /> -->
+  
+  <img width="200" alt="thumbnail" [src]="art.multimedia[2].url">
+  
+  
 </div>

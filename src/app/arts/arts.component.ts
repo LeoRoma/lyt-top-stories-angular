@@ -14,10 +14,7 @@ export class ArtsComponent implements OnInit {
   constructor(private api: ApiService) { }
 
   ngOnInit() {
-    // this.api.getArts().subscribe(
-    //   api => this.arts = api
-    // )
-    
+   
     this.api.getArts().then((response) => {
       response.json().then((api) => {
         this.arts = api.results;
@@ -26,17 +23,6 @@ export class ArtsComponent implements OnInit {
     }).catch((err) => {
       console.log(`Error generated ${err}`);
     });
-
-    this.api.getArts().then((response) => {
-      response.json().then((api) => {
-        this.imgs = api.results;
-        console.log('images here');
-        console.log(this.imgs); 
-      });
-    }).catch((err) => {
-      console.log(`Error generated ${err}`);
-    });
-    
   }
   
 }
