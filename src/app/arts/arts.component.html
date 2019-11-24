@@ -6,14 +6,16 @@
       <div class="row h-30">
         <div class="col-sm-6" style="background-color:lavender;">
           <div class="w-6 p-3">
-            <img class="img-fluid mx-auto d-block" width="600" alt="thumbnail" [src]="arts.results[0].multimedia[3].url">
+            <img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+              [src]="arts.results[0].multimedia[3].url">
             <h6>{{ arts.results[0].title }}</h6>
             <p>{{ arts.results[0].abstract }}</p>
           </div>
         </div>
         <div class="col-sm-3" style="background-color:lavenderblush;">
           <div>
-            <img class="img-fluid mx-auto d-block" width="300" alt="thumbnail" [src]="arts.results[1].multimedia[3].url">
+            <img class="img-fluid mx-auto d-block" width="300" alt="thumbnail"
+              [src]="arts.results[1].multimedia[3].url">
             <h6>{{ arts.results[1].title }}</h6>
             <p>{{ arts.results[0].abstract }}</p>
           </div>
@@ -22,14 +24,16 @@
           <div class="row">
             <div>
               <h5>{{ arts.results[2].title }}</h5>
-              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail" [src]="arts.results[2].multimedia[1].url">
+              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail"
+                [src]="arts.results[2].multimedia[1].url">
               <p>{{ arts.results[2].abstract }}</p>
             </div>
           </div>
           <div class="row">
             <div>
               <h3>{{ arts.results[3].title }}</h3>
-              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail" [src]="arts.results[3].multimedia[1].url">
+              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail"
+                [src]="arts.results[3].multimedia[1].url">
               <p>{{ arts.results[3].abstract }}</p>
             </div>
           </div>
@@ -39,61 +43,64 @@
   </div>
 </div>
 
- <!-- carousel with other 6 news  -->
- <carousel>
+<!-- carousel with other 6 news  -->
+<carousel>
   <slide>
-    <img width="400" alt="thumbnail" [src]="arts.results[4].multimedia[3].url">
+    <img width="1000" alt="thumbnail" [src]="arts.results[0].multimedia[3].url">
     <div class="carousel-caption d-none d-md-block">
       <h3>First slide label</h3>
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </div>
   </slide>
   <slide>
-    <img width="400" alt="thumbnail" [src]="arts.results[5].multimedia[3].url">
+    <img width="400" alt="thumbnail" [src]="arts.results[1].multimedia[3].url">
     <div class="carousel-caption d-none d-md-block">
       <h3>Second slide label</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </slide>
   <slide>
-    <img width="400" alt="thumbnail" [src]="arts.results[6].multimedia[3].url">
+    <img width="400" alt="thumbnail" [src]="arts.results[2].multimedia[3].url">
     <div class="carousel-caption d-none d-md-block">
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </div>
   </slide>
 </carousel>
- 
+
+
+
 <div>
   <h3>{{ arts.results[4].title }}</h3>
   <img width="400" alt="thumbnail" [src]="arts.results[4].multimedia[3].url">
+  <h3>{{ arts.results[4].title }}</h3>
   <p>{{ arts.results[0].abstract }}</p>
 </div>
 
 <div>
-  <h3>{{ arts.results[5].title }}</h3>
   <img width="300" alt="thumbnail" [src]="arts.results[5].multimedia[3].url">
+  <h3>{{ arts.results[5].title }}</h3>
   <p>{{ arts.results[0].abstract }}</p>
 </div>
 
 <div>
-  <h3>{{ arts.results[6].title }}</h3>
   <img width="400" alt="thumbnail" [src]="arts.results[6].multimedia[3].url">
+  <h3>{{ arts.results[6].title }}</h3>
   <p>{{ arts.results[0].abstract }}</p>
 </div>
 
 <div>
-  <h3>{{ arts.results[7].title }}</h3>
   <img width="400" alt="thumbnail" [src]="arts.results[7].multimedia[3].url">
+  <h3>{{ arts.results[7].title }}</h3>
   <p>{{ arts.results[0].abstract }}</p>
 </div>
 
 <div>
-    <h3>{{ arts.results[8].title }}</h3>
     <img width="400" alt="thumbnail" [src]="arts.results[8].multimedia[3].url">
+    <h3>{{ arts.results[8].title }}</h3>
     <p>{{ arts.results[0].abstract }}</p>
   </div>
-  
+
 
 <!-- <div *ngFor="let art of arts | slice:0:9">
     <h3>{{ art.subsection }}</h3>
