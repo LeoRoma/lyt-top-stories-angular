@@ -1,0 +1,20 @@
+<!-- <div *ngFor="let art of arts | slice:0:9">
+    <h3>{{ art.subsection }}</h3>
+    <p>{{ art.title }}</p>
+    <img width="200" alt="thumbnail" [src]="art.multimedia[2].url">
+    <p>{{ art.abstract }}</p>
+  </div>  -->
+
+  <carousel [itemsPerSlide]="itemsPerSlide"
+          [singleSlideOffset]="singleSlideOffset"
+          [interval]="false"
+          [noWrap]="noWrap">
+  <slide *ngFor="let art of arts | slice:0:9">
+    <img [src]="art.multimedia[2].url" alt="image slide" style="display: block; width: 100%;">
+    <div class="carousel-caption">
+      
+    </div>
+    <p>{{ art.title }}</p>
+      <p>{{ art.abstract }}</p>
+  </slide>
+</carousel> 
