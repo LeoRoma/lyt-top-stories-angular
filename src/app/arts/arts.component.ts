@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class ArtsComponent implements OnInit {
 
   arts: Object;
-  imgs: Object;
+  
   constructor(private api: ApiService) { }
 
   ngOnInit() {

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArtsComponent } from './arts/arts.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -12,9 +12,10 @@ import { ArtAndDesignComponent } from './art-and-design/art-and-design.component
 @NgModule({
   declarations: [
     AppComponent,
-    ArtsComponent,
+    // ArtsComponent,
     HeaderComponent,
-    ArtAndDesignComponent
+    routingComponents,
+    // ArtAndDesignComponent
   ],
   imports: [
     BrowserModule,
