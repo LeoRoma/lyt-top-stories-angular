@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -8,9 +8,15 @@ import { ApiService } from '../api.service';
 })
 export class MultilistCarouselComponent implements OnInit {
 
-  itemsPerSlide = 5;
-  singleSlideOffset = true;
-  noWrap = true;
+  prev = document.querySelector('.prev');
+  next = document.querySelector('.next');
+
+  track = document.querySelector('.track');
+
+  next.addEventListener('click', () => {
+    track.style.transform = 'translateX(-${carouselWidht})px';
+  })
+  carouselWidth = document.querySelector('.carousel-container').offsetWidth;
 
   arts: Object;
   
