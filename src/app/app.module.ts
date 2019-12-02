@@ -11,6 +11,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { MultilistCarouselComponent } from './multilist-carousel/multilist-carousel.component';
 import { BooksComponent } from './books/books.component';
 import { TelevisionComponent } from './television/television.component';
+import { MusicComponent } from './music/music.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { TelevisionComponent } from './television/television.component';
     MultilistCarouselComponent,
     BooksComponent,
     TelevisionComponent,
+    MusicComponent,
   ],
   imports: [
     BrowserModule,

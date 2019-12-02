@@ -1,0 +1,43 @@
+<p>music works!</p>
+<div>
+  <div>
+    <div class="container-fluid">
+      <div class="row h-30">
+        <div class="col-sm-6" style="background-color:lavender;">
+          <div class="w-6 p-3">
+            <img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+              [src]="music[0].multimedia[4].url">
+            <h6>{{ music[0].title }}</h6>
+            <p>{{ music[0].abstract }}</p>
+          </div>
+        </div>
+        <div class="col-sm-3" style="background-color:lavenderblush;">
+          <div>
+            <img class="img-fluid mx-auto d-block" width="300" alt="thumbnail"
+              [src]="music[1].multimedia[4].url">
+            <h6>{{ music[1].title }}</h6>
+            <p>{{ music[1].abstract }}</p>
+          </div>
+        </div>
+        <div class="col-sm-3" style="background-color:lavender;">
+          <div class="row">
+            <div>
+              <h5>{{ music[2].title }}</h5>
+              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail"
+                [src]="music[2].multimedia[4].url">
+              <p>{{ music[2].abstract }}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <h3>{{ music[3].title }}</h3>
+              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail"
+                [src]="music[3].multimedia[4].url">
+              <p>{{ music[3].abstract }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
