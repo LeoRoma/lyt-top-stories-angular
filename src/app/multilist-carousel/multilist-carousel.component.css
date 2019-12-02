@@ -1,0 +1,49 @@
+.carousel-container {
+  width: 1110px;
+  margin: 50px auto;
+  min-height: 200px;
+  position: relative;
+}
+
+.carousel-container .carousel-inner {
+  overflow: hidden;
+}
+
+.carousel-container .track {
+  display: flex;
+}
+
+.carousel-container .card-container {
+  width: 222px;
+  flex-shrink: 0;
+  height: 250px;
+  
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.carousel-container .card-container .card {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.nav button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #aaaaaa;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-200%);
+}
+
+.nav .prev {
+  left: 0px;
+}
+
+.nav .next {
+  right: 0px;
+}

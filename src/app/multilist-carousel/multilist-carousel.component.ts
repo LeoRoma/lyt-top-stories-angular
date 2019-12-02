@@ -9,8 +9,8 @@ import { ApiService } from '../api.service';
 export class MultilistCarouselComponent implements OnInit {
 
   itemsPerSlide = 5;
-  singleSlideOffset = false;
-  // noWrap = true;
+  singleSlideOffset = true;
+  noWrap = true;
 
   arts: Object;
   
