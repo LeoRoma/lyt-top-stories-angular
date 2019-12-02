@@ -1,1 +1,50 @@
-<!-- <p>{{ arts.results[0].subsection('Art & Design').title }}</p> -->
+<!-- <p>{{ arts[0].title }}</p> -->
+<h1>Art and Design</h1>
+<!-- <p>{{ (arts | filter : {'subsection':'Television'})[0].title }}</p> -->
+
+<!-- <h1>{{artAndDesign[0].title}}</h1>
+<h1>{{artAndDesign[2].title}}</h1> -->
+
+<p>{{ artAndDesign[0].abstract }}</p>
+<div>
+  <div>
+    <div class="container-fluid">
+      <div class="row h-30">
+        <div class="col-sm-6" style="background-color:lavender;">
+          <div class="w-6 p-3">
+            <img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+              [src]="artAndDesign[0].multimedia[4].url">
+            <h6>{{ artAndDesign[0].title }}</h6>
+            <p>{{ artAndDesing[0].abstract }}</p>
+          </div>
+        </div>
+        <div class="col-sm-3" style="background-color:lavenderblush;">
+          <div>
+            <img class="img-fluid mx-auto d-block" width="300" alt="thumbnail"
+              [src]="artAndDesign[1].multimedia[4].url">
+            <h6>{{ artAndDesign[1].title }}</h6>
+            <p>{{ artAndDesign[1].abstract }}</p>
+          </div>
+        </div>
+        <div class="col-sm-3" style="background-color:lavender;">
+          <div class="row">
+            <div>
+              <h5>{{ artAndDesign[2].title }}</h5>
+              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail"
+                [src]="artAndDesign[2].multimedia[4].url">
+              <p>{{ artAndDesign[2].abstract }}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <h3>{{ artAndDesign[3].title }}</h3>
+              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail"
+                [src]="artAndDesign[3].multimedia[4].url">
+              <p>{{ artAndDesign[3].abstract }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

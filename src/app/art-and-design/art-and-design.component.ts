@@ -10,16 +10,28 @@ export class ArtAndDesignComponent implements OnInit {
   constructor(private api: ApiService) { }
 
   arts: Object;
-  
-  ngOnInit() {
-    // this.api.getArts().then((response) => {
-    //   response.json().then((api) => {
-    //     this.arts = api;
-    //     console.log(this.arts);
-    //   });
-    // }).catch((err) => {
-    //   console.log(`Error generated ${err}`);
-    // });
-  }
+  artAndDesign: string[] = [];
 
+  ngOnInit() {
+    this.api.getArts().then((response) => {
+      response.json().then((api) => {
+        this.arts = api.results;
+        for (let i = 0; i <= 50; i++){
+          // console.log(this.artAndDesign);
+          if(this.arts[i].subsection === 'Art & Design'){
+            console.log(this.arts[i]);
+            this.artAndDesign.push(this.arts[i]);
+            // console.log(this.artAndDesign);
+          }
+        }
+
+        
+        // console.log(this.arts);
+      });
+    }).catch((err) => {
+      console.log(`Error generated ${err}`);
+    });
+  
+  }
+  
 }
