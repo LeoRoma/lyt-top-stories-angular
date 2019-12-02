@@ -1,0 +1,43 @@
+<p>books works!</p>
+<div>
+  <div>
+    <div class="container-fluid">
+      <div class="row h-30">
+        <div class="col-sm-6" style="background-color:lavender;">
+          <div class="w-6 p-3">
+            <img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+              [src]="books[0].multimedia[4].url">
+            <h6>{{ books[0].title }}</h6>
+            <p>{{ books[0].abstract }}</p>
+          </div>
+        </div>
+        <div class="col-sm-3" style="background-color:lavenderblush;">
+          <div>
+            <img class="img-fluid mx-auto d-block" width="300" alt="thumbnail"
+              [src]="books[1].multimedia[4].url">
+            <h6>{{ books[1].title }}</h6>
+            <p>{{ books[1].abstract }}</p>
+          </div>
+        </div>
+        <div class="col-sm-3" style="background-color:lavender;">
+          <div class="row">
+            <div>
+              <h5>{{ books[2].title }}</h5>
+              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail"
+                [src]="books[2].multimedia[4].url">
+              <p>{{ books[2].abstract }}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <h3>{{ books[3].title }}</h3>
+              <img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail"
+                [src]="books[3].multimedia[4].url">
+              <p>{{ books[3].abstract }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

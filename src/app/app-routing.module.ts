@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ArtsComponent } from './arts/arts.component';
 import { ArtAndDesignComponent } from './art-and-design/art-and-design.component';
+import { BooksComponent } from './books/books.component';
+import { TelevisionComponent } from './television/television.component';
 
 const routes: Routes = [
   {
@@ -11,7 +13,15 @@ const routes: Routes = [
   {
     path: 'art-and-design',
     component: ArtAndDesignComponent
-  }
+  },
+  {
+    path: 'books',
+    component: BooksComponent
+  },
+  {
+    path: 'television',
+    component: TelevisionComponent
+  },
 ];
 
 @NgModule({
@@ -19,4 +29,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [ArtsComponent, ArtAndDesignComponent];
+export const routingComponents = [ArtsComponent, ArtAndDesignComponent, BooksComponent, TelevisionComponent];

@@ -9,6 +9,8 @@ import { HeaderComponent } from './header.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { MultilistCarouselComponent } from './multilist-carousel/multilist-carousel.component';
+import { BooksComponent } from './books/books.component';
+import { TelevisionComponent } from './television/television.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { MultilistCarouselComponent } from './multilist-carousel/multilist-carou
     HeaderComponent,
     routingComponents,
     MultilistCarouselComponent,
+    BooksComponent,
+    TelevisionComponent,
   ],
   imports: [
     BrowserModule,

@@ -18,7 +18,7 @@ export class ArtsComponent implements OnInit {
     this.api.getArts().then((response) => {
       response.json().then((api) => {
         this.arts = api;
-        // console.log(this.arts);
+        console.log(this.arts);
       });
     }).catch((err) => {
       console.log(`Error generated ${err}`);
