@@ -13,10 +13,10 @@ export class MultilistCarouselComponent implements OnInit {
 
   track = document.querySelector('.track');
 
-  next.addEventListener('click', () => {
-    track.style.transform = 'translateX(-${carouselWidht})px';
-  })
-  carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+  // next.addEventListener('click', () => {
+  //   track.style.transform = 'translateX(-${carouselWidht})px';
+  // })
+  // carouselWidth = document.querySelector('.carousel-container').offsetWidth;
 
   arts: Object;
   
