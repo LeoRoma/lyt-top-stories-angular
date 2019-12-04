@@ -4,10 +4,10 @@ First project in Angular CLI version 8.3.19.
 
 ## Instructions
 
-Open your terminal.
-Clone the repository in your terminal with `git clone`
-Run `npm install` to install all the dependencies.
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Open your terminal.
+- Clone the repository in your terminal with `git clone https://github.com/LeoRoma/lyt-top-stories-angular.git`
+- Run `npm install` to install all the dependencies.
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
