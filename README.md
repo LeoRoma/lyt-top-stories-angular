@@ -1,6 +1,6 @@
 # Description
 
-First project in Angular CLI version 8.3.19.
+First project in Angular CLI version 8.3.19. I am creating a website similar to "The New York Times" utilising its API.
 
 ## Instructions
 
@@ -9,9 +9,15 @@ First project in Angular CLI version 8.3.19.
 - Run `npm install` to install all the dependencies.
 - Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Approach
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- I have started first to create `api.service.ts` where I have imported `HttpClient` and created a method `getArts` to get the HTTP request.
+- I have created `arts.component.ts` where I have imported the `api.service.ts` to fetch the API.
+- Once I fetched the API, I rendered the request on `arts.component.html` getting the interested value.
+- I have created `header.component.ts` for the header of the website.
+- I have created different components and after the possibility to navigate between them by defining the routes in `app.routing.ts`
+- I have found it some bug, the API doesn't work properly all the time and I need to fix it.
+- I would like to complete the website, but is still missing the possibility to let the carousel move with "next" and "prev" buttons, I need to complete with the styling and also make some link to other pages by clicking on the images or title of each news.
 
 ## Build
 
