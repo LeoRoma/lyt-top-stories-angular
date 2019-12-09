@@ -8,7 +8,7 @@
           <div class="w-6 p-3">
               <a href="{{ arts[0].url }}"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
               [src]="arts[0].multimedia[4].url"></a>
-            <h6>{{ arts[0].title }}</h6>
+            <a href="{{ arts[0].url }}"><h6>{{ arts[0].title }}</h6></a>
             <p>{{ arts[0].abstract }}</p>
           </div>
         </div>
@@ -16,14 +16,14 @@
           <div>
             <a href="{{ arts[1].url }}"><img class="img-fluid mx-auto d-block" width="300" alt="thumbnail"
               [src]="arts[1].multimedia[4].url"></a>
-            <h6>{{ arts[1].title }}</h6>
+            <a href="{{ arts[1].url }}"><h6>{{ arts[1].title }}</h6></a>
             <p>{{ arts[1].abstract }}</p>
           </div>
         </div>
         <div class="col-sm-3" style="background-color:lavender;">
           <div class="row">
             <div>
-              <h5>{{ arts[2].title }}</h5> 
+              <a href="{{ arts[2].url }}"><h5>{{ arts[2].title }}</h5></a>
               <a href="{{ arts[2] }}"><img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail" 
                 [src]="arts[2].multimedia[4].url"></a> 
               <p>{{ arts[2].abstract }}</p>
@@ -31,7 +31,7 @@
           </div>
           <div class="row">
             <div>
-              <h3>{{ arts[3].title }}</h3>
+              <a href="{{ arts[3].url }}"><h3>{{ arts[3].title }}</h3></a>
               <a href="{{ arts[3].url }}"><img class="rounded float-right img-fluid mx-auto d-block" width="100" alt="thumbnail"
                 [src]="arts[3].multimedia[4].url"></a>
               <p>{{ arts[3].abstract }}</p>
