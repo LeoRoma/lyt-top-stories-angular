@@ -1,29 +1,28 @@
-.carousel-container {
+/* .carousel-container {
   width: 1110px;
   margin: 50px auto;
   min-height: 200px;
   position: relative;
+  border-style: dotted;
+  border-color: red;
 }
 
-.carousel-container .carousel-inner {
+/* .carousel-container .carousel-inner {
   overflow: hidden;
-}
+} */ */
 
-.carousel-container .track {
+/* .carousel-container .carousel-item {
   display: flex;
-}
-
-.carousel-container .carousel-item{
-  display: flex;
-} 
+} */
 
 .carousel-container .card-container {
   width: 222px;
   flex-shrink: 0;
   height: 250px;
-  
+  border-style: dotted;
   padding: 10px;
   box-sizing: border-box;
+  border-color: blue;
 }
 
 .carousel-container .card-container .card {
@@ -34,28 +33,7 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-}
-
-.nav button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid #aaaaaa;
-  position: absolute;
-  top: 100%;
-  transform: translateY(-200%);
-  cursor: pointer;
-}
-
-.nav .prev {
-  left: 0px;
-  left: 2%;
-  
-}
-
-.nav .next {
-  right: 0px;
-  right: 2%;
+  border-style: dotted;
 }
 
 .card > * {
@@ -75,4 +53,27 @@ card .img {
   flex-grow: 0;
   padding: 10px;
   box-sizing: border-box;
+}
+
+/* bootstrap carousel */
+
+#demo {
+  width: 1110px;
+  margin: 10px auto;
+  min-height: 200px;
+  position: relative;
+}
+
+.col-lg-1-5 {
+  display: inline-block;
+  width: 222px;
+  flex-shrink: 0;
+  height: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.col-md-3 img {
+  width: 100%;
+  height: auto;
 }

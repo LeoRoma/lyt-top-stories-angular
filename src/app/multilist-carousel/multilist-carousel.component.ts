@@ -7,8 +7,9 @@ import { ApiService } from '../api.service';
   styleUrls: ['./multilist-carousel.component.css']
 })
 export class MultilistCarouselComponent implements OnInit {
-  myInterval = 1500;
-  activeSlideIndex = 0;
+  itemsPerSlide = 5;
+  singleSlideOffset = true;
+  noWrap = true;
  
 
   arts: Object;
