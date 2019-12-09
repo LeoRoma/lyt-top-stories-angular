@@ -13,6 +13,10 @@
   display: flex;
 }
 
+.carousel-container .carousel-item{
+  display: flex;
+} 
+
 .carousel-container .card-container {
   width: 222px;
   flex-shrink: 0;
@@ -45,10 +49,13 @@
 
 .nav .prev {
   left: 0px;
+  left: 2%;
+  
 }
 
 .nav .next {
   right: 0px;
+  right: 2%;
 }
 
 .card > * {

@@ -7,10 +7,15 @@ import { ApiService } from '../api.service';
   styleUrls: ['./multilist-carousel.component.css']
 })
 export class MultilistCarouselComponent implements OnInit {
+  myInterval = 1500;
+  activeSlideIndex = 0;
+ 
 
   arts: Object;
 
   constructor(private api: ApiService) { }
+
+ 
 
   ngOnInit() {
 

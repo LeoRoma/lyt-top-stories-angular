@@ -1,67 +1,101 @@
 <div class="carousel-container">
-  <div class="carousel-inner">
-    <div class="track">
-      <div class="card-container">
-        <div class="card">
-          <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-              [src]="arts.results[4].multimedia[4].url"></div>
-          <div class="title">{{ arts.results[4].title }}</div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+    <ul class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+
+    </ul>
+
+
+    <div class="carousel-inner">
+      <div class="track carousel-item active">
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[4].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[4].title }}</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[5].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[5].title }}</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[6].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[6].title }}</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[7].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[7].title }}</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[8].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[8].title }}</div>
+          </div>
         </div>
       </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-              [src]="arts.results[5].multimedia[4].url"></div>
-          <div class="title">{{ arts.results[5].title }}</div>
+
+
+      <div class="track carousel-item">
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[9].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[9].title }}</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[10].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[10].title }}</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[11].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[11].title }}</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[12].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[12].title }}</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
+                [src]="arts.results[13].multimedia[4].url"></div>
+            <div class="title">{{ arts.results[13].title }}</div>
+          </div>
         </div>
       </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-              [src]="arts.results[6].multimedia[4].url"></div>
-          <div class="title">{{ arts.results[6].title }}</div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-              [src]="arts.results[7].multimedia[4].url"></div>
-          <div class="title">{{ arts.results[7].title }}</div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-              [src]="arts.results[8].multimedia[4].url"></div>
-          <div class="title">{{ arts.results[8].title }}</div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-              [src]="arts.results[9].multimedia[4].url"></div>
-          <div class="title">{{ arts.results[9].title }}</div>
-        </div>
-      </div>
+
     </div>
-  </div>
-  <div class="nav">
-    <button class="prev">prev</button>
-    <button class="next">next</button>
+
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
   </div>
 </div>
 
-<script>
-  prev = document.querySelector('.prev');
-  next = document.querySelector('.next');
 
-  track = document.querySelector('.track');
-
-  carouselWidth = document.querySelector('.carousel-container').offsetWidth;
-
-  next.addEventListener('click', () => {
-    track.style.transform = 'translateX(-${carouselWidht})px';
-  })
-
-
-</script>
