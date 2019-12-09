@@ -4,42 +4,42 @@
       <div class="card-container">
         <div class="card">
           <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-            [src]="arts.results[4].multimedia[4].url"></div>
+              [src]="arts.results[4].multimedia[4].url"></div>
           <div class="title">{{ arts.results[4].title }}</div>
         </div>
       </div>
       <div class="card-container">
         <div class="card">
           <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-            [src]="arts.results[5].multimedia[4].url"></div>
+              [src]="arts.results[5].multimedia[4].url"></div>
           <div class="title">{{ arts.results[5].title }}</div>
         </div>
       </div>
       <div class="card-container">
         <div class="card">
           <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-            [src]="arts.results[6].multimedia[4].url"></div>
+              [src]="arts.results[6].multimedia[4].url"></div>
           <div class="title">{{ arts.results[6].title }}</div>
         </div>
       </div>
       <div class="card-container">
         <div class="card">
           <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-            [src]="arts.results[7].multimedia[4].url"></div>
+              [src]="arts.results[7].multimedia[4].url"></div>
           <div class="title">{{ arts.results[7].title }}</div>
         </div>
       </div>
       <div class="card-container">
         <div class="card">
           <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-            [src]="arts.results[8].multimedia[4].url"></div>
+              [src]="arts.results[8].multimedia[4].url"></div>
           <div class="title">{{ arts.results[8].title }}</div>
         </div>
       </div>
       <div class="card-container">
         <div class="card">
           <div class="img"><img class="img-fluid mx-auto d-block" width="600" alt="thumbnail"
-            [src]="arts.results[9].multimedia[4].url"></div>
+              [src]="arts.results[9].multimedia[4].url"></div>
           <div class="title">{{ arts.results[9].title }}</div>
         </div>
       </div>
@@ -50,3 +50,18 @@
     <button class="next">next</button>
   </div>
 </div>
+
+<script>
+  prev = document.querySelector('.prev');
+  next = document.querySelector('.next');
+
+  track = document.querySelector('.track');
+
+  carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+
+  next.addEventListener('click', () => {
+    track.style.transform = 'translateX(-${carouselWidht})px';
+  })
+
+
+</script>
