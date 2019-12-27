@@ -16,17 +16,17 @@ export class ArtAndDesignComponent implements OnInit {
     this.api.getArts().then((response) => {
       response.json().then((api) => {
         this.arts = api.results;
-        for (let i = 0; i <= 50; i++){
-          if(this.arts[i].subsection === 'Art & Design'){
+        for (let i = 0; i <= 50; i++) {
+          if (this.arts[i].subsection === 'Art & Design') {
             this.artAndDesign.push(this.arts[i]);
           }
         }
-       
+
       });
     }).catch((err) => {
       console.log(`Error generated ${err}`);
     });
-  
+
   }
-  
+
 }
