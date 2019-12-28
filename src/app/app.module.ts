@@ -13,6 +13,8 @@ import { BooksComponent } from './books/books.component';
 import { TelevisionComponent } from './television/television.component';
 import { MusicComponent } from './music/music.component';
 
+import { Title } from '@angular/platform-browser';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,10 @@ import { MusicComponent } from './music/music.component';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    Title
+  ],
+  bootstrap: [AppComponent],
+ 
 })
 export class AppModule { }
