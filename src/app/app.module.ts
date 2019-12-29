@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
@@ -13,7 +13,7 @@ import { BooksComponent } from './books/books.component';
 import { TelevisionComponent } from './television/television.component';
 import { MusicComponent } from './music/music.component';
 
-import { Title } from '@angular/platform-browser';
+
 
 
 @NgModule({
@@ -36,6 +36,6 @@ import { Title } from '@angular/platform-browser';
     Title
   ],
   bootstrap: [AppComponent],
- 
+
 })
 export class AppModule { }
