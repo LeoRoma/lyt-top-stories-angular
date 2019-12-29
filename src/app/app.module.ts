@@ -1,4 +1,4 @@
-import { BrowserModule, Title } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
@@ -32,9 +32,7 @@ import { MusicComponent } from './music/music.component';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [
-    Title
-  ],
+  providers: [],
   bootstrap: [AppComponent],
 
 })

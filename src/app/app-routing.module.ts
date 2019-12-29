@@ -15,9 +15,6 @@ const routes: Routes = [
   {
     path: 'art-and-design',
     component: ArtAndDesignComponent,
-    data: {
-      title: 'Art & Design'
-    }
   },
   {
     path: 'books',
