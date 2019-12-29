@@ -8,11 +8,9 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent {
 
-  title = 'nyt-top-stories-angular';
+  
 
-  constructor(private titleService: Title) {
-    setTitle( newTitle: string) {
-      this.titleService.setTitle( newTitle );
-    }
-  }
+  constructor(private titleService: Title) { }
+
+  
 }

@@ -9,13 +9,15 @@ import { Title } from '@angular/platform-browser';
 
 export class HeaderComponent implements OnInit {
 
-title ='setTitleinArts'
+  title = 'nyt-top-stories-angular';
 
-  constructor(private serviceTitle: Title) { }
+  constructor(private titleService: Title) { }
 
-  setTitleBooks() {
-    this.serviceTitle.setTitle("Books");
+  setDocTitle(title: string) {
+    console.log('current title:::::' + this.titleService.getTitle());
+    this.titleService.setTitle(title);
   }
+
   ngOnInit(): void {
     throw new Error("Method not implemented");
   }
