@@ -23,7 +23,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Sign Up</a>
@@ -36,13 +36,14 @@
 </nav>
 <h1 class="text-center" id="new-leo">The New Leo Times</h1>
 <h1>Arts</h1>
+<h1>{{ subSection}}</h1>
 
 <!-- ordered list with subsections buttons link -->
 
 <ol class="list-group list-group-horizontal">
   <li class="list-group-item"><a routerLink="/art-and-design" routerLinkActive="active">Art & Design</a></li>
   <li class="list-group-item"><a routerLink="/books" routerLinkActive="active">Books</a></li>
-  <li class="list-group-item">Dance</li>
+  <li class="list-group-item"><button (click)="subSection = 'Dance'">Dance</button></li>
   <li class="list-group-item">Movies</li>
   <li class="list-group-item"><a routerLink="/music" routerLinkActive="active">Music</a></li>
   <li class="list-group-item"><a routerLink="/television" routerLinkActive="active">Television</a></li>

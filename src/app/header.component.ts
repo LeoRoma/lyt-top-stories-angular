@@ -7,14 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
+  subSection: string = "";
 
- 
-
-  constructor() { }
-
-
-  // throw new Error("Method not implemented");
-  ngOnInit() {
+  setSubSection() {
+    this.subSection = "Dance";
+    console.log("hello");
   }
+
+
 }
