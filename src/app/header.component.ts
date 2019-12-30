@@ -9,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
 
 export class HeaderComponent {
   subSection: string = "";
+  content: string = "hi"
 
-  setSubSection() {
-    this.subSection = "Dance";
-    console.log("hello");
+  // setSubSection(): void {
+  //   this.subSection = "Dance";
+  //   console.log("hello");
+  // }
+
+  setHello() {
+    this.content = "hello"
+    console.log('hello');
   }
-
-
 }
