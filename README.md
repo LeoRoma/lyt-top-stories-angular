@@ -21,7 +21,11 @@ First project in Angular CLI version 8.3.19. I am creating a website similar to 
 
 - Open your terminal.
 - Clone the repository from github.
-- Type in your terminal `git clone
+- Type in your terminal `git clone https://github.com/LeoRoma/lyt-top-stories-angular.git`.
+- Install all the dependecies from your terminal by typing `npm install`.
+- From your terminal type `ng serve` to start your server.
+- Go to your browser and copy and paste `http://localhost:4200/arts`.
+- You will see the first page of the website, you will be able to visit the subsections and each relative news.
 
 ## Build
 
