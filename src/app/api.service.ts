@@ -10,6 +10,6 @@ export class ApiService {
  
   getArts() {
     
-    return fetch('https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=mEFtmwXR1fltqq8rPx8PKwTLKmktbqhO');
+    return fetch('https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=s3sidQNE043xhMtYMOTXG0E044n5RsFd');
   }
 }
